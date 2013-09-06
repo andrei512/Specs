@@ -10,4 +10,5 @@ Pod::Spec.new do |s|
   s.source_files = '*.{h,m}'
   s.requires_arc = true
   s.ios.vendored_frameworks = 'Crashlytics.framework'
+  s.preserve_paths = 'Crashlytics.framework'
 end
