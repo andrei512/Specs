@@ -12,7 +12,6 @@ Pod::Spec.new do |s|
                    DESC
 
   s.homepage     = "http://aplisp.com"
-  # s.screenshots  = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
 
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "Andrei Puni" => "puni.andrei23@gmail.com" }
@@ -43,4 +42,8 @@ Pod::Spec.new do |s|
   # s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2' }
   
   s.dependency 'APUtils'
+
+  s.prefix_header_contents = <<-EOF
+    #import <APUtils.h>
+  EOF
 end
