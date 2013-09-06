@@ -44,6 +44,7 @@ Pod::Spec.new do |s|
   s.dependency 'APUtils'
 
   s.prefix_header_contents = <<-EOF
-    #import <APUtils.h>
+#import <APUtils.h>
+#import "NSObject+APList.h"
   EOF
 end
