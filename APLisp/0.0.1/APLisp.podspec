@@ -45,6 +45,6 @@ Pod::Spec.new do |s|
 
   s.prefix_header_contents = <<-EOF
 #import <APUtils.h>
-#import "NSObject+APList.h"
+#import "NSObject+APLisp.h"
   EOF
 end
